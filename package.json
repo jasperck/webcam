@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/jasperck/webcam/issues"
   },
-  "homepage": "https://github.com/jasperck/webcam#readme"
+  "homepage": "https://github.com/jasperck/webcam#readme",
+  "dependencies": {
+    "ws": "^1.0.1"
+  }
 }
