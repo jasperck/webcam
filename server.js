@@ -20,6 +20,9 @@ wsServer.on('connection', (ws) => {
   clients.push(ws);
   ws.on('message', (data) => {
     util.log('[data] ' + data);
+    clients.forEach((client) => {
+      client.send(message);
+    });
   });
   ws.on('close', () => {
     util.log('websocket disconnected');
